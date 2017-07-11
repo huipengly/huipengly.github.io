@@ -1,21 +1,21 @@
 
 <!DOCTYPE html>
-<html lang="null">
+<html lang="zh-cn">
     
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="Hexo">
-    <title>将git协议由https变为ssh - Hexo</title>
-    <meta name="author" content="John Doe">
+    <meta name="generator" content="huipengly 的 垃圾桶">
+    <title>将git协议由https变为ssh - huipengly 的 垃圾桶</title>
+    <meta name="author" content="huipengly">
     
     
     
     <meta name="description" content="遇到git是需要输入github的帐号和密码。想切换为ssh，不需要每次输入帐号密码先添加本机ssh公钥到github账户。然后进行切换1git remote set-url origin git@github.com:huipengly/huipengly.github.io-hexo-file.git">
 <meta property="og:type" content="blog">
 <meta property="og:title" content="将git协议由https变为ssh">
-<meta property="og:url" content="http://yoursite.com/2017/07/10/将git协议由https变为ssh/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:url" content="http://huipengly.github.io/2017/07/10/将git协议由https变为ssh/index.html">
+<meta property="og:site_name" content="huipengly 的 垃圾桶">
 <meta property="og:description" content="遇到git是需要输入github的帐号和密码。想切换为ssh，不需要每次输入帐号密码先添加本机ssh公钥到github账户。然后进行切换1git remote set-url origin git@github.com:huipengly/huipengly.github.io-hexo-file.git">
 <meta property="og:updated_time" content="2017-07-10T14:56:35.117Z">
 <meta name="twitter:card" content="summary">
@@ -25,6 +25,8 @@
     
         
     
+    
+        <meta property="og:image" content="http://huipengly.github.io/assets/images/mirai"/>
     
     
     
@@ -42,17 +44,23 @@
 
 
     
+        
+            
+        
+    
 
 <header id="header" data-behavior="4">
     <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
     <div class="header-title">
-        <a class="header-title-link" href="/ ">Hexo</a>
+        <a class="header-title-link" href="/ ">huipengly 的 垃圾桶</a>
     </div>
     
         
             <a  class="header-right-picture "
                 href="#about">
         
+        
+            <img class="header-picture" src="/assets/images/mirai" alt="作者的图片"/>
         
         </a>
     
@@ -61,8 +69,23 @@
             <!-- Define author's picture -->
 
 
+
+        
+    
+
 <nav id="sidebar" data-behavior="4">
     <div class="sidebar-container">
+        
+            <div class="sidebar-profile">
+                <a href="/#about">
+                    <img class="sidebar-profile-picture" src="/assets/images/mirai" alt="作者的图片"/>
+                </a>
+                <h4 class="sidebar-profile-name">huipengly</h4>
+                
+                    <h5 class="sidebar-profile-bio"><p>自动化专业的肥宅、码农<br>入门C语言，不会面向对象，研究过openwrt<br>努力提升自我表达能力中</p>
+</h5>
+                
+            </div>
         
         
             <ul class="sidebar-buttons">
@@ -75,7 +98,7 @@
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-home"></i>
-                        <span class="sidebar-button-desc">Home</span>
+                        <span class="sidebar-button-desc">首页</span>
                     </a>
             </li>
             
@@ -87,7 +110,7 @@
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
-                        <span class="sidebar-button-desc">Categories</span>
+                        <span class="sidebar-button-desc">分类</span>
                     </a>
             </li>
             
@@ -99,7 +122,7 @@
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
-                        <span class="sidebar-button-desc">Tags</span>
+                        <span class="sidebar-button-desc">标签</span>
                     </a>
             </li>
             
@@ -111,7 +134,7 @@
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
-                        <span class="sidebar-button-desc">Archives</span>
+                        <span class="sidebar-button-desc">归档</span>
                     </a>
             </li>
             
@@ -123,7 +146,7 @@
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-search"></i>
-                        <span class="sidebar-button-desc">Search</span>
+                        <span class="sidebar-button-desc">搜索</span>
                     </a>
             </li>
             
@@ -135,7 +158,7 @@
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-question"></i>
-                        <span class="sidebar-button-desc">About</span>
+                        <span class="sidebar-button-desc">关于</span>
                     </a>
             </li>
             
@@ -143,19 +166,30 @@
         
             <ul class="sidebar-buttons">
             
-        </ul>
-        
-            <ul class="sidebar-buttons">
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link " href="https://github.com/huipengly" target="_blank" rel="noopener">
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+                        <span class="sidebar-button-desc">GitHub</span>
+                    </a>
+            </li>
             
                 <li class="sidebar-button">
                     
-                        <a  class="sidebar-button-link "
-                             href="/atom.xml"
-                            
-                        >
+                        <a  class="sidebar-button-link " href="mailto:huipengly@gmail.com" target="_blank" rel="noopener">
                     
-                        <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
-                        <span class="sidebar-button-desc">RSS</span>
+                        <i class="sidebar-button-icon fa fa-lg fa-envelope-o"></i>
+                        <span class="sidebar-button-desc">邮箱</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link " href="http://weibo.com/2678969353" target="_blank" rel="noopener">
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-weibo"></i>
+                        <span class="sidebar-button-desc">Weibo</span>
                     </a>
             </li>
             
@@ -183,7 +217,7 @@
         <div class="post-meta">
     <time itemprop="datePublished" datetime="2017-07-10T10:53:52+08:00">
 	
-		    Jul 10, 2017
+		    7月 10, 2017
     	
     </time>
     
@@ -207,17 +241,17 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/07/10/hello-world/"  data-tooltip="Hello World">
+                    <a class="post-action-btn btn btn--disabled">
                 
                     <i class="fa fa-angle-left"></i>
-                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                    <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
                 </a>
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/07/10/测试中文标题/" data-tooltip="测试中文标题">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/07/10/hexo建立后的配置记录/" data-tooltip="hexo建立后的配置记录">
                 
-                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
                     <i class="fa fa-angle-right"></i>
                 </a>
             </li>
@@ -233,24 +267,16 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/07/10/将git协议由https变为ssh/">
-                    <i class="fa fa-facebook-official"></i>
+                <a class="post-action-btn btn btn--default" target="new" href="http://service.weibo.com/share/share.php?&amp;title=http://huipengly.github.io/2017/07/10/将git协议由https变为ssh/">
+                    <i class="fa fa-weibo"></i>
                 </a>
             </li>
         
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://yoursite.com/2017/07/10/将git协议由https变为ssh/">
-                    <i class="fa fa-twitter"></i>
-                </a>
-            </li>
-        
-            
-            
-            <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://yoursite.com/2017/07/10/将git协议由https变为ssh/">
-                    <i class="fa fa-google-plus"></i>
+                <a class="post-action-btn btn btn--default" target="new" href="http://connect.qq.com/widget/shareqq/index.html?url=http://huipengly.github.io/2017/07/10/将git协议由https变为ssh/&amp;title=将git协议由https变为ssh">
+                    <i class="fa fa-qq"></i>
                 </a>
             </li>
         
@@ -277,7 +303,7 @@
 
                 <footer id="footer" class="main-content-wrap">
     <span class="copyrights">
-        Copyrights &copy; 2017 John Doe. All Rights Reserved.
+        Copyrights &copy; 2017 huipengly. All Rights Reserved.
     </span>
 </footer>
 
@@ -289,17 +315,17 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/07/10/hello-world/"  data-tooltip="Hello World">
+                    <a class="post-action-btn btn btn--disabled">
                 
                     <i class="fa fa-angle-left"></i>
-                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                    <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
                 </a>
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/07/10/测试中文标题/" data-tooltip="测试中文标题">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/07/10/hexo建立后的配置记录/" data-tooltip="hexo建立后的配置记录">
                 
-                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
                     <i class="fa fa-angle-right"></i>
                 </a>
             </li>
@@ -315,24 +341,16 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/07/10/将git协议由https变为ssh/">
-                    <i class="fa fa-facebook-official"></i>
+                <a class="post-action-btn btn btn--default" target="new" href="http://service.weibo.com/share/share.php?&amp;title=http://huipengly.github.io/2017/07/10/将git协议由https变为ssh/">
+                    <i class="fa fa-weibo"></i>
                 </a>
             </li>
         
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://yoursite.com/2017/07/10/将git协议由https变为ssh/">
-                    <i class="fa fa-twitter"></i>
-                </a>
-            </li>
-        
-            
-            
-            <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://yoursite.com/2017/07/10/将git协议由https变为ssh/">
-                    <i class="fa fa-google-plus"></i>
+                <a class="post-action-btn btn btn--default" target="new" href="http://connect.qq.com/widget/shareqq/index.html?url=http://huipengly.github.io/2017/07/10/将git协议由https变为ssh/&amp;title=将git协议由https变为ssh">
+                    <i class="fa fa-qq"></i>
                 </a>
             </li>
         
@@ -356,24 +374,16 @@
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/07/10/将git协议由https变为ssh/">
-                    <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+                <a class="share-option-btn" target="new" href="http://service.weibo.com/share/share.php?&amp;title=http://huipengly.github.io/2017/07/10/将git协议由https变为ssh/">
+                    <i class="fa fa-weibo"></i><span>分享到 Weibo</span>
                 </a>
             </li>
         
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://yoursite.com/2017/07/10/将git协议由https变为ssh/">
-                    <i class="fa fa-twitter"></i><span>Share on Twitter</span>
-                </a>
-            </li>
-        
-            
-            
-            <li class="share-option">
-                <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://yoursite.com/2017/07/10/将git协议由https变为ssh/">
-                    <i class="fa fa-google-plus"></i><span>Share on Google+</span>
+                <a class="share-option-btn" target="new" href="http://connect.qq.com/widget/shareqq/index.html?url=http://huipengly.github.io/2017/07/10/将git协议由https变为ssh/&amp;title=将git协议由https变为ssh">
+                    <i class="fa fa-qq"></i><span>分享到 QQ</span>
                 </a>
             </li>
         
@@ -385,22 +395,28 @@
         
 
 
+    
+        
+    
+
 <div id="about">
     <div id="about-card">
         <div id="about-btn-close">
             <i class="fa fa-remove"></i>
         </div>
         
-            <h4 id="about-card-name">John Doe</h4>
+            <img id="about-card-picture" src="/assets/images/mirai" alt="作者的图片"/>
         
-            <div id="about-card-bio"><p>author.bio</p>
+            <h4 id="about-card-name">huipengly</h4>
+        
+            <div id="about-card-bio"><p>自动化专业的肥宅、码农<br>入门C语言，不会面向对象，研究过openwrt<br>努力提升自我表达能力中</p>
 </div>
         
         
             <div id="about-card-job">
                 <i class="fa fa-briefcase"></i>
                 <br/>
-                <p>author.job</p>
+                <p>研究生<del>（未来码农）</del></p>
 
             </div>
         
@@ -424,19 +440,19 @@
             </form>
         </div>
         <div class="modal-body">
-            <div class="no-result text-color-light text-center">no post found</div>
+            <div class="no-result text-color-light text-center">没有找到文章</div>
             <div class="results">
                 
                 <div class="media">
                     
                     <div class="media-body">
-                        <a class="link-unstyled" href="http://yoursite.com/2017/07/10/My-First-Post/">
+                        <a class="link-unstyled" href="http://huipengly.github.io/2017/07/10/hexo建立后的配置记录/">
                             <h3 class="media-heading">hexo建立后的配置记录</h3>
                         </a>
                         <span class="media-meta">
                             <span class="media-date text-small">
                                 
-                                    Jul 10, 2017
+                                    2017年7月10日
                                 
                             </span>
                         </span>
@@ -449,89 +465,13 @@
                 <div class="media">
                     
                     <div class="media-body">
-                        <a class="link-unstyled" href="http://yoursite.com/2017/07/10/year-07-10-test/">
-                            <h3 class="media-heading">test</h3>
-                        </a>
-                        <span class="media-meta">
-                            <span class="media-date text-small">
-                                
-                                    Jul 10, 2017
-                                
-                            </span>
-                        </span>
-                        <div class="media-content hide-xs font-merryweather"></div>
-                    </div>
-                    <div style="clear:both;"></div>
-                    <hr>
-                </div>
-                
-                <div class="media">
-                    
-                    <div class="media-body">
-                        <a class="link-unstyled" href="http://yoursite.com/2017/07/10/test2/">
-                            <h3 class="media-heading">test2</h3>
-                        </a>
-                        <span class="media-meta">
-                            <span class="media-date text-small">
-                                
-                                    Jul 10, 2017
-                                
-                            </span>
-                        </span>
-                        <div class="media-content hide-xs font-merryweather"></div>
-                    </div>
-                    <div style="clear:both;"></div>
-                    <hr>
-                </div>
-                
-                <div class="media">
-                    
-                    <div class="media-body">
-                        <a class="link-unstyled" href="http://yoursite.com/2017/07/10/测试中文标题/">
-                            <h3 class="media-heading">测试中文标题</h3>
-                        </a>
-                        <span class="media-meta">
-                            <span class="media-date text-small">
-                                
-                                    Jul 10, 2017
-                                
-                            </span>
-                        </span>
-                        <div class="media-content hide-xs font-merryweather"></div>
-                    </div>
-                    <div style="clear:both;"></div>
-                    <hr>
-                </div>
-                
-                <div class="media">
-                    
-                    <div class="media-body">
-                        <a class="link-unstyled" href="http://yoursite.com/2017/07/10/将git协议由https变为ssh/">
+                        <a class="link-unstyled" href="http://huipengly.github.io/2017/07/10/将git协议由https变为ssh/">
                             <h3 class="media-heading">将git协议由https变为ssh</h3>
                         </a>
                         <span class="media-meta">
                             <span class="media-date text-small">
                                 
-                                    Jul 10, 2017
-                                
-                            </span>
-                        </span>
-                        <div class="media-content hide-xs font-merryweather"></div>
-                    </div>
-                    <div style="clear:both;"></div>
-                    <hr>
-                </div>
-                
-                <div class="media">
-                    
-                    <div class="media-body">
-                        <a class="link-unstyled" href="http://yoursite.com/2017/07/10/hello-world/">
-                            <h3 class="media-heading">Hello World</h3>
-                        </a>
-                        <span class="media-meta">
-                            <span class="media-date text-small">
-                                
-                                    Jul 10, 2017
+                                    2017年7月10日
                                 
                             </span>
                         </span>
@@ -545,10 +485,10 @@
         </div>
         <div class="modal-footer">
             <p class="results-count text-medium"
-                data-message-zero="no post found"
-                data-message-one="1 post found"
-                data-message-other="{n} posts found">
-                6 posts found
+                data-message-zero="没有找到文章"
+                data-message-one="找到 1 篇文章"
+                data-message-other="找到 {n} 篇文章">
+                找到 2 篇文章
             </p>
         </div>
     </div>
@@ -562,6 +502,13 @@
 
     
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment-with-locales.min.js"></script>
+    <script src="//cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+    <script>
+        var algoliaClient = algoliasearch('62LM21T8PC', 'ab919479b988530a8d5df4b108a690c1');
+        var algoliaIndex = algoliaClient.initIndex('huipengly-hexo-blog');
+    </script>
 
     </body>
 </html>
