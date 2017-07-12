@@ -6,20 +6,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="huipengly 的 垃圾桶">
-    <title>all-archives - huipengly 的 垃圾桶</title>
+    <title>标签: keepass - huipengly 的 垃圾桶</title>
     <meta name="author" content="huipengly">
     
     
     
     <meta name="description" content="记录自己的想法">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="all-archives">
-<meta property="og:url" content="http://huipengly.github.io/all-archives/index.html">
+<meta property="og:title" content="huipengly 的 垃圾桶">
+<meta property="og:url" content="http://huipengly.github.io/tags/keepass/index.html">
 <meta property="og:site_name" content="huipengly 的 垃圾桶">
 <meta property="og:description" content="记录自己的想法">
-<meta property="og:updated_time" content="2017-07-11T14:47:41.870Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="all-archives">
+<meta name="twitter:title" content="huipengly 的 垃圾桶">
 <meta name="twitter:description" content="记录自己的想法">
     
     
@@ -204,59 +203,75 @@
                         hasCoverMetaIn
                         ">
                 
-<div id="archives" class="main-content-wrap">
-    <form id="filter-form" action="#">
-        <input name="date" type="text" class="form-control input--xlarge" placeholder="搜索日期 (YYYY/MM/DD)" autofocus="autofocus">
-    </form>
-    <h5 class="archive-result text-color-base text-xlarge"
-        data-message-zero="没有找到文章"
-        data-message-one="找到 1 篇文章"
-        data-message-other="找到 {n} 篇文章"></h5>
-    <section class="boxes">
+    <section class="postShorten-group main-content-wrap">
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title" itemprop="headline">
+                    
+                        <a class="link-unstyled" href="/2017/07/12/KeePass管理密码/">
+                            KeePass管理密码
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time itemprop="datePublished" datetime="2017-07-12T20:35:39+08:00">
+	
+		    7月 12, 2017
+    	
+    </time>
+    
+        <span>发布在 </span>
         
-            
-            
-            
-                
-                
-                <div class="archive archive-year box" data-date="2017">
-                    <h4 class="archive-title">
-                        <a class="link-unstyled" href="/archives/2017">2017</a>
-                    </h4>
-            
-            
-                
-                <ul class="archive-posts archive-month" data-date="201707">
-                    <h5 class="archive-title">
-                        <a class="link-unstyled" href="/archives/2017/07">July</a>
-                    </h5>
-                
-            
-            <li class="archive-post archive-day" data-date="20170712">
-                <a class="archive-post-title" href="/2017/07/12/KeePass管理密码/">KeePass管理密码</a>
-                <span class="archive-post-date"> - 7月 12, 2017</span>
-            </li>
-        
-            
-            
-            
-            
-            <li class="archive-post archive-day" data-date="20170710">
-                <a class="archive-post-title" href="/2017/07/10/将git协议由https变为ssh/">将git协议由https变为ssh</a>
-                <span class="archive-post-date"> - 7月 10, 2017</span>
-            </li>
-        
-            
-            
-            
-            
-            <li class="archive-post archive-day" data-date="20170710">
-                <a class="archive-post-title" href="/2017/07/10/hexo建立后的配置记录/">hexo建立后的配置记录</a>
-                <span class="archive-post-date"> - 7月 10, 2017</span>
-            </li>
-        
-    </section>
+    <a class="category-link" href="/categories/技术学习/">技术学习</a>
+
+
+    
 </div>
+
+            </div>
+            
+                <div class="postShorten-content" itemprop="articleBody">
+                    <p>每次换手机号都会有很多帐号忘记改，一销号才想起来，烦得很。<br>自己保存帐号密码的方式从小学记在小本本上，到后面变为记在excel里，并存在TrueCrypt里。看来保密，数字化了。但是用起来很麻烦，而且不便于更新、查找。<br>暑假闲着，痛下决心要用更方便的方式去管理。</p>
+<h2 id="一、软件挑选"><a href="#一、软件挑选" class="headerlink" title="一、软件挑选"></a>一、软件挑选</h2><p>密码管理类软件有1password， lastpass， keepass等。<br>商业软件应该会用起来更顺手，但是考虑到价格，放弃了。<br>就看到了keepass这款开源软件，虽然界面质朴了点，试用了后感觉比较顺手。因为顺手<del>不要钱</del>就决定用它了。</p>
+<p>选keepass原因：  </p>
+<ol>
+<li>免费。</li>
+<li>开源，有大量项目支持。</li>
+<li>跨平台支持。</li>
+<li>可以通过keeweb进行网页查看</li>
+</ol>
+<h2 id="二、账号密码导入"><a href="#二、账号密码导入" class="headerlink" title="二、账号密码导入"></a>二、账号密码导入</h2><p>这可是个头疼的工作，我自己本来excel里记录的都有几十个，chrome里还有一两百个吧。一个一个手动输入会死的。<br>搜索发现，keepass可以导入csv，浏览器里的密码可以使用<a href="http://www.nirsoft.net/utils/web_browser_password.html" target="_blank" rel="external">web_browser_password</a>导出。稍加整理<del>一下午</del>后，在keepass里选择导入csv，整理csv各项顺序，就可以导入账号密码了。<br>我自己excel里记的，可以通过编辑csv文件，进行批量导入，比一条一条编辑更快。</p>
+<h2 id="三、使用"><a href="#三、使用" class="headerlink" title="三、使用"></a>三、使用</h2>
+                    
+                        
+                    
+                    
+                        <p>
+                            <a href="/2017/07/12/KeePass管理密码/#post-footer" class="postShorten-excerpt_link link">
+                                评论和共享
+                            </a>
+                        </p>
+                    
+                </div>
+            
+        </div>
+        
+    </article>
+    
+    <div class="pagination-bar">
+    <ul class="pagination">
+        
+        
+        <li class="pagination-number">第 1 页 共 1 页</li>
+    </ul>
+</div>
+
+</section>
+
 
                 <footer id="footer" class="main-content-wrap">
     <span class="copyrights">
