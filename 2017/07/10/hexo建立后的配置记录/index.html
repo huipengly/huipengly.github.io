@@ -11,17 +11,17 @@
     
     
     
-    <meta name="description" content="一、配置生成文件名附带日期修改_config.yml中的new_post_name为1new_post_name: :year-:month-:day-:title.md # File name of new posts 二、测试中文标题名可以1hexo new &amp;quot;这里写中文&amp;quot; 三、同步部署github和coding在_config_yml中修改deploy12345deplo">
+    <meta name="description" content="一、配置生成文件名附带日期修改_config.yml中的new_post_name为1new_post_name: :year-:month-:day-:title.md # File name of new posts">
 <meta name="keywords" content="hexo">
 <meta property="og:type" content="blog">
 <meta property="og:title" content="hexo建立后的配置记录">
 <meta property="og:url" content="http://huipengly.github.io/2017/07/10/hexo建立后的配置记录/index.html">
 <meta property="og:site_name" content="huipengly 的 垃圾桶">
-<meta property="og:description" content="一、配置生成文件名附带日期修改_config.yml中的new_post_name为1new_post_name: :year-:month-:day-:title.md # File name of new posts 二、测试中文标题名可以1hexo new &amp;quot;这里写中文&amp;quot; 三、同步部署github和coding在_config_yml中修改deploy12345deplo">
-<meta property="og:updated_time" content="2017-07-12T14:40:24.786Z">
+<meta property="og:description" content="一、配置生成文件名附带日期修改_config.yml中的new_post_name为1new_post_name: :year-:month-:day-:title.md # File name of new posts">
+<meta property="og:updated_time" content="2017-07-13T15:02:30.641Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo建立后的配置记录">
-<meta name="twitter:description" content="一、配置生成文件名附带日期修改_config.yml中的new_post_name为1new_post_name: :year-:month-:day-:title.md # File name of new posts 二、测试中文标题名可以1hexo new &amp;quot;这里写中文&amp;quot; 三、同步部署github和coding在_config_yml中修改deploy12345deplo">
+<meta name="twitter:description" content="一、配置生成文件名附带日期修改_config.yml中的new_post_name为1new_post_name: :year-:month-:day-:title.md # File name of new posts">
     
     
         
@@ -236,11 +236,12 @@
     <div class="post-content markdown" itemprop="articleBody">
         <div class="main-content-wrap">
             <h2 id="一、配置生成文件名附带日期"><a href="#一、配置生成文件名附带日期" class="headerlink" title="一、配置生成文件名附带日期"></a>一、配置生成文件名附带日期</h2><p>修改_config.yml中的new_post_name为<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">new_post_name: :year-:month-:day-:title.md # File name of new posts</div></pre></td></tr></table></figure></p>
+<a id="more"></a>
 <h2 id="二、测试中文标题名"><a href="#二、测试中文标题名" class="headerlink" title="二、测试中文标题名"></a>二、测试中文标题名</h2><p>可以<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new &quot;这里写中文&quot;</div></pre></td></tr></table></figure></p>
 <h2 id="三、同步部署github和coding"><a href="#三、同步部署github和coding" class="headerlink" title="三、同步部署github和coding"></a>三、同步部署github和coding</h2><p>在_config_yml中修改deploy<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo:</div><div class="line">      github: git@github.com:huipengly/huipengly.github.io.git,master</div><div class="line">      coding: git@git.coding.net:huipengly/huipengly.coding.me.git,master</div></pre></td></tr></table></figure></p>
 <h2 id="四、选择一个不错的主题"><a href="#四、选择一个不错的主题" class="headerlink" title="四、选择一个不错的主题"></a>四、选择一个不错的主题</h2><p>在github里搜索hexo-theme，根据star来寻找，找到了hexo-theme-tranquilpeak。<br>按照作者的介绍，下载。并修改_config_yml文件的theme。<br>修改主题的设置。语言、简介等，按照github上的来。<br>algolia配的有问题。</p>
-<h2 id="五、Windows下同步使用（研究中）"><a href="#五、Windows下同步使用（研究中）" class="headerlink" title="五、Windows下同步使用（研究中）"></a>五、Windows下同步使用（研究中）</h2><p>拷贝并切换到项目文件夹<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --save hexo</div></pre></td></tr></table></figure></p>
-<p>安装要运行hexo s的包<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --save jquery prompt process-nextick-args util-deprecate hexo-fs hexo-deployer-git</div></pre></td></tr></table></figure></p>
+<h2 id="五、Windows下同步使用"><a href="#五、Windows下同步使用" class="headerlink" title="五、Windows下同步使用"></a>五、Windows下同步使用</h2><p>注意：git同步整个目录的时候要把主题目录里的.gitignore文件删掉。</p>
+<h2 id="六、hexo别人的不错的文章"><a href="#六、hexo别人的不错的文章" class="headerlink" title="六、hexo别人的不错的文章"></a>六、hexo别人的不错的文章</h2><p><a href="http://supermaryy.com/2016/07/02/Obstacles_I_Met_When_Using_Hexo/" target="_blank" rel="external">http://supermaryy.com/2016/07/02/Obstacles_I_Met_When_Using_Hexo/</a></p>
 
             
         </div>
@@ -476,7 +477,7 @@
                                 
                             </span>
                         </span>
-                        <div class="media-content hide-xs font-merryweather"></div>
+                        <div class="media-content hide-xs font-merryweather"><h2 id="一、配置生成文件名附带日期"><a href="#一、配置生成文件名附带日期" class="headerlink" title="一、配置生成文件名附带日期"></a>一、配置生成文件名附带日期</h2><p>修改_config.yml中的new_post_name为<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">new_post_name: :year-:month-:day-:title.md # File name of new posts</div></pre></td></tr></table></figure></p></div>
                     </div>
                     <div style="clear:both;"></div>
                     <hr>
@@ -514,7 +515,7 @@
                                 
                             </span>
                         </span>
-                        <div class="media-content hide-xs font-merryweather"></div>
+                        <div class="media-content hide-xs font-merryweather"><p>每次换手机号都会有很多帐号忘记改，一销号才想起来，烦得很。<br>自己保存帐号密码的方式从小学记在小本本上，到后面变为记在excel里，并存在TrueCrypt里。看来保密，数字化了。但是用起来很麻烦，而且不便于更新、查找。<br>暑假闲着，痛下决心要用更方便的方式去管理。<br></div>
                     </div>
                     <div style="clear:both;"></div>
                     <hr>
